@@ -4,8 +4,6 @@ def square_array(array)
   array.map do |element|
     element * element
   end 
-  square_array
-end
 end 
 
 
