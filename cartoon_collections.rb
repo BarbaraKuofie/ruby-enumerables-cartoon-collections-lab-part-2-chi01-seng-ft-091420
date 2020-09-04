@@ -3,7 +3,6 @@ def square_array(array)
   # Return a new array of the results
   array.map do |element|
     element * element
-    return square_array
   end 
 end
 
