@@ -4,6 +4,7 @@ def square_array(array)
   array.map do |element|
     element * element
   end 
+  square_array
 end
 
 def summon_captain_planet(planeteer_calls)
@@ -11,6 +12,7 @@ def summon_captain_planet(planeteer_calls)
   # Return a new array of the results
   planeteer_calls.map {|element|element.upcase + "!"}
 end 
+summon_captain_planet
 end
 
 def long_planeteer_calls(planeteer_calls)
@@ -18,6 +20,7 @@ def long_planeteer_calls(planeteer_calls)
   # Return the boolean result of this check
   planeteer_calls.fin.any?{|word|word.length > 4}
 end 
+long_planeteer_calls
 end
 
 def find_valid_calls(planeteer_calls)
@@ -26,4 +29,5 @@ def find_valid_calls(planeteer_calls)
   # Return the first valid call found, or return nil if no valid calls are found
   planeteer_calls.find {|word|word == valid_calls}
 end 
+find_valid_calls
 end
